@@ -1,0 +1,136 @@
+:root{
+  --fondo-verde: #b7e0a0;
+  --azul-oscuro: #1c5f7c;
+  --azul-encabezado: #2a9bcf;
+  --azul-medio: #3aa9d8;
+  --durazno: #fbe0cd;
+  --caja-oscura: #143216;
+  --magenta: #cf67c2;
+  --caja-verde: #82ca7b;
+  --naranja: #df7c39;
+  --caja-gris: #808080;
+  --amarillo: #f2e40a;
+}
+
+* { box-sizing: border-box; }
+
+body{
+  margin:0;
+  padding:0;
+  background:#eee;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  min-height:100vh;
+  font-family: sans-serif;
+}
+
+.pagina{
+  width: 755px;
+  height: 975px;
+  background: var(--fondo-verde);
+  border: 3px solid #2c2c2c;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ---------- SECCIÓN 1 ---------- */
+.seccion1{
+  background: var(--azul-oscuro);
+  border: 2px solid #1a1a1a;
+  flex: 0 0 212px;
+  padding: 15px;
+}
+
+.barra-encabezado{
+  background: var(--azul-encabezado);
+  border: 5px dashed #ffffff; /* No se como se hacen cuadritos pero se acerca */
+  width: 100%;
+  height: 70px;
+}
+
+/* ---------- SECCIÓN 2 ---------- */
+.seccion2{
+  flex: 0 0 155px;
+  display: flex;
+  gap: 10px;
+}
+
+.columna{
+  flex: 1;
+  background: var(--azul-medio);
+  border: 2px solid #1a1a1a;
+  position: relative; /* contenedor para posicionar el beige/oscuro */
+}
+
+/* Caja beige: posicionada con % dentro de la columna 1 */
+.caja-durazno{
+  position: absolute;
+  left: 20%;
+  top: 24%;
+  width: 60%;
+  height: 45%;
+  background: var(--durazno);
+  border: 8px dashed #ffffff;
+}
+
+/* Caja oscura: posicionada con % dentro de la columna 3 */
+.caja-oscura{
+  position: absolute;
+  right: 7%;
+  top: 10%;
+  width: 60%;
+  height: 55%;
+  background: var(--caja-oscura);
+  border: 6px dashed #ffffff;
+}
+
+/* ---------- SECCIÓN 3 ---------- */
+.seccion3{
+  flex: 1;
+  background: var(--magenta);
+  border: 2px solid #1a1a1a;
+  position: relative;
+}
+
+/* Cubo verde vertical, reubicado con % */
+.verde-vertical{
+  position: absolute;
+  left: 12%;
+  top: 5%;
+  width: 20%;
+  height: 88%;
+  background: var(--caja-verde);
+  border: 5px dashed #ffffff;
+}
+
+/* Cubo verde horizontal, reubicado con % */
+.verde-horizontal{
+  position: absolute;
+  left: 37%;
+  top: 35%;
+  width: 51%;
+  height: 23%;
+  background: var(--caja-verde);
+  border: 6px dashed #ffffff;
+}
+
+/* ---------- SECCIÓN 4 ---------- */
+.seccion4{
+  flex: 0 0 120px;
+  background: var(--naranja);
+  border: 2px solid #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 35px;
+}
+
+.caja-gris{
+  width: 65px;
+  height: 45px;
+  background: var(--caja-gris);
+  border: 4px solid var(--amarillo);
+}
