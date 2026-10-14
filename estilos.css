@@ -111,3 +111,34 @@ section{
     max-width: 100%;
     border: none;
 }
+/*Estilos de la página Comunidad (tabla y lista de definiciones)*/
+.tabla-contenedor{
+    overflow-x: auto;
+}
+.tabla-tecnologias{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+.tabla-tecnologias caption{
+    padding: 8px;
+    font-style: italic;
+}
+.tabla-tecnologias th,
+.tabla-tecnologias td{
+    border: 1px solid #04568d;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+}
+.tabla-tecnologias th{
+    background-color: #04568d;
+    color: white;
+}
+dt{
+    font-weight: bold;
+    margin-top: 12px;
+}
+dd{
+    margin-left: 20px;
+}
