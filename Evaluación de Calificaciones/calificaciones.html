@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de calificaciones</title>
+    <link rel="stylesheet" href="calificaciones.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Sistema de evaluación</h1>
+        <p>Ingresa los datos del estudiante</p>
+
+        <label>Nombre del estudiante</label>
+        <input type="text" id="nombre" placeholder="Nombre completo">
+
+        <label>Primera calificación</label>
+        <input type="number" id="cal1" placeholder="0 - 10" step="any">
+
+        <label>Segunda calificación</label>
+        <input type="number" id="cal2" placeholder="0 - 10" step="any">
+
+        <label>Tercera calificación</label>
+        <input type="number" id="cal3" placeholder="0 - 10" step="any">
+
+        <button onclick="calcular()">Calcular promedio</button>
+
+        <div id="resultado"></div>
+
+        <button class="regresar" onclick="window.location.href='../index.html'">
+            Regresar
+        </button>
+    </div>
+
+    <script src="calificaciones.js"></script>
+
+</body>
+</html>
